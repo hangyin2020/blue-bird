@@ -48,7 +48,7 @@ TweetWithAuthor[] }) {
         }
     }, [supabase, router]);
 
-    return tweets.map((tweet) => (
+    return optimisticTweets.map((tweet) => (
         <div key={tweet.id} className="border border-gray-800 border-t-0 px-4 py-8 flex">
             <div className="h-12 w-12">
                 <Image
